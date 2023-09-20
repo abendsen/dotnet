@@ -207,7 +207,8 @@ partial class ObservablePropertyGenerator
                     attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.DataAnnotations.KeyAttribute") == true ||
                     attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.DescriptionAttribute") == true ||
                     attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.CategoryAttribute") == true ||
-                    attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.EditorAttribute") == true)
+                    attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.EditorAttribute") == true ||
+                    attributeData.AttributeClass?.HasFullyQualifiedMetadataName("System.ComponentModel.PasswordPropertyTextAttribute") == true)
                 {
                     forwardedAttributes.Add(AttributeInfo.Create(attributeData));
                 }
